@@ -17,3 +17,12 @@ mainClassName = 'ohtuesimerkki.Main'
 run {
     standardInput = System.in
 }
+
+apply plugin: 'jacoco'
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
+}
